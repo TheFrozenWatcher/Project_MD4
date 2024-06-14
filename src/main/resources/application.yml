@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: project_md4
+  datasource:
+    url: jdbc:mysql://localhost:3306/project_md4?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jooq:
+    sql-dialect: org.hibernate.dialect.MySQL8Dialect
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+# jwt
+jwt:
+  secret_key: rikkei_academy
+  expired:
+    access: 864000
